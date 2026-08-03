@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IK Solutions</title>
+<style>
+  :root {
+    --bg: #0f1613;
+    --bg-panel: #151d19;
+    --text: #eef1ef;
+    --text-dim: #a3ada7;
+    --accent: #3ecf8e;
+    --border: #24312b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 32px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #0f1613;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  header span {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+
+  .content {
+    max-width: 620px;
+    width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  p.lead {
+    font-size: 17px;
+    color: var(--text-dim);
+    max-width: 520px;
+    margin-bottom: 40px;
+  }
+
+  .panel {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .row dt {
+    font-size: 13px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .row dd {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .row dd a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .row dd a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    padding: 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://github.com/Kendall-Cruz/quiz-icons/blob/main/icons/angular" class="logo-mark">IK </img>
+  <span>IK Solutions</span>
+</header>
+
+<main>
+  <div class="content">
+    <p class="eyebrow">Costa Rica</p>
+    <h1>Agentes de IA para WhatsApp Business</h1>
+    <p class="lead">
+      Diseñamos, implementamos y damos mantenimiento a agentes de inteligencia artificial
+      sobre WhatsApp Business para pequeños y medianos negocios, automatizando la atención
+      al cliente sin perder el trato cercano que ya tienen con los suyos.
+    </p>
+
+    <dl class="panel">
+      <div class="row">
+        <dt>Contacto</dt>
+        <dd><a href="mailto:iksolutions1611@gmail.com">iksolutions1611@gmail.com</a></dd>
+      </div>
+      <div class="row">
+        <dt>Ubicación</dt>
+        <dd>Costa Rica</dd>
+      </div>
+      <div class="row">
+        <dt>Servicio</dt>
+        <dd>Desarrollo de software a medida</dd>
+      </div>
+    </dl>
+  </div>
+</main>
+
+<footer>
+  © 2026 IK Solutions
+</footer>
+
+</body>
+</html>
